@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter the number of bits:");
+    scanf("%d",&n);
+    char binary[n+1];
+    char onescomplement[n+1];
+    char twoscomplement[n+1];
+    int carry=1;
+        printf("enter the binary is:");
+        scanf("%s",binary);
+        printf("%s",binary);
+        printf("\n onescomplement:");
+    for(int i=0;i<n;i++)
+    {
+        if(binary[i]=='0')
+        onescomplement[i]='1';
+        else if(binary[i]=='1')
+        onescomplement[i]='0';
+    }
+    onescomplement[n]='0';
+    printf("%s",onescomplement);
+     printf("\n twoscomplement:");
+
+    for(int i=0;i<0;i--)
+    {
+        if(onescomplement[i]=='0',carry=='1')
+        twoscomplement[i]=='1';
+        else(onescomplement[i]=='1',carry=='0');
+        twoscomplement[i]=='0';
+    }
+    twoscomplement[n]='0';
+    printf("%s",onescomplement);
+    return 0;
+}
+
+        
+      
